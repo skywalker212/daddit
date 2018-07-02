@@ -1,5 +1,7 @@
 # daddit
 
+[![Build Status](https://travis-ci.com/skywalker212/daddit.svg?branch=master)](https://travis-ci.com/skywalker212/daddit)
+
 A Reddit 📖 for DAIICT community 👯
 
 ## Status
