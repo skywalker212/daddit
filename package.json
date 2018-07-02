@@ -1,7 +1,7 @@
 {
-  "name": "react-node-webpack-boilerplate",
-  "version": "0.0.0-0",
-  "description": "React/Nodejs + Webpack",
+  "name": "daddit",
+  "version": "0.0.1",
+  "description": "Reddit for DAIICT",
   "main": "build/bundle.js",
   "directories": {
     "test": "tests"
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FittedTech/react-node-webpack.git"
+    "url": "git+https://github.com/skywalker212/daddit.git"
   },
   "keywords": [
     "react",
@@ -30,12 +30,12 @@
     "mern",
     "boilerplate"
   ],
-  "author": "Conner Aiken",
+  "author": "Akash Gajjar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FittedTech/react-node-webpack/issues"
+    "url": "https://github.com/skywalker212/daddit/issues"
   },
-  "homepage": "https://github.com/FittedTech/react-node-webpack#readme",
+  "homepage": "https://github.com/skywalker212/daddit#README",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
