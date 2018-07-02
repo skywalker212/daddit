@@ -4,6 +4,8 @@
 
 A Reddit 📖 for DAIICT community 👯
 
+![screenshot](screenshot.png)
+
 ## Status
 
 This project is currently under development. Play with it by cloning ti locally.
