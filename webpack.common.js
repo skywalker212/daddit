@@ -109,14 +109,13 @@ module.exports = {
   devServer: {
     proxy: {
       // proxy URLs to backend development server
-      '/api': 'http://localhost:3000'
+      '/api': 'http://[::1]:3000'
     },
     contentBase: paths.contentBase,
     compress: true, // enable gzip compression
     disableHostCheck: true, // this can be dangerous, do not use unless on a private LAN in a safe network
     historyApiFallback: true, // true for index.html upon 404, object for multiple paths
     hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin 
-    host: 'localhost', // listen on all interfaces
     https: true, // true for self-signed, object for cert authority
     noInfo: false, // only errors & warns on hot reload  
     port: 8080,
