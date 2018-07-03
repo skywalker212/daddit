@@ -7,15 +7,17 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "webpack --config webpack.common.js --mode production",
+    "build": "npm run clean && npm run build-server && webpack --config webpack.common.js --mode production",
     "dev": "webpack-dev-server --config webpack.common.js --mode development --open --watch",
     "test": "echo \"Error: no test specified but lets exit with success so travis builds\" && exit 0",
     "prestart": "yarn run build",
-    "start:dev": "concurrently \"npm start\" \"npm run dev\"",
-    "start": "babel-node src/server/index.js  --presets=env,stage-0",
+    "start:dev": "concurrently \"npm run build-server\" \"npm start\" \"npm run dev\"",
+    "start": "node build/server/index.js",
     "start:docker": "docker-compose up",
     "upgradeDeps": "ncu -u",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "build-server":"babel -d ./build/server ./src/server -s",
+    "clean": "rm -rf build && mkdir build"
   },
   "repository": {
     "type": "git",
