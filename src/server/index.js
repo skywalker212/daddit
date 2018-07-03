@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import db from './db/mongoose';
 import Post from './models/post';
 
+const port = process.env.PORT || 3000;
+
 global.path = path;
 global.dotenv = dotenv;
 
@@ -21,6 +23,6 @@ app.get('/api/name',(req,res)=>{
     res.json({name:"this is daddit biatch"});
 });
 
-app.listen(process.env.port, () => {
-    utils.log(`Server has started and is listening on port ${process.env.port}!`)
+app.listen(port, () => {
+    utils.log(`Server has started and is listening on port ${port}!`)
 });
