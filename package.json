@@ -11,8 +11,8 @@
     "dev": "webpack-dev-server --config webpack.common.js --mode development --open --watch",
     "test": "echo \"Error: no test specified but lets exit with success so travis builds\" && exit 0",
     "prestart": "npm run build",
-    "start": "concurrently \"npm run server\" \"npm run dev\"",
-    "server": "babel-node src/server/index.js  --presets=env,stage-0",
+    "start:dev": "concurrently \"npm start\" \"npm run dev\"",
+    "start": "babel-node src/server/index.js  --presets=env,stage-0",
     "start:docker": "docker-compose up",
     "upgradeDeps": "ncu -u",
     "prepublishOnly": "npm run build"
@@ -70,6 +70,7 @@
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
     "jquery": "^3.3.1",
+    "mongoose": "^5.1.8",
     "popper.js": "^1.14.3",
     "react-router-dom": "^4.3.1"
   }

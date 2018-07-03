@@ -1,6 +1,11 @@
 language: node_js
 sudo: false
 node_js:
- - "9.8"
+- '9.8'
 install:
-  - npm install
+- npm install
+deploy:
+  provider: heroku
+  api_key:
+    secure: lAIRR+4w11r0dKuHg6ZKuUK8eMFt1386v/GCbSaB8bFqxPKSn+IuoJ/SHA5v0gVH0YlpN6/n3cqkjftZhUqvGHb2t+7tZvOyp8BsoL3igOcBcaa+4a6+/LjBAJ1Es1gGLB07hgEuWqdVlfTuFmCM4w/jpp7g8748obhYvGYVos6wa2ucEp1gHn28E1piukptUmliVcVkbnBWqmGaDg/pXlPuzTQMrXxUlZFkreUX48Gmt7/581jA0asH90l0eIwf9EDeD+LDoUEEALHmAP6aU+Brc/ZzckPsNyKwe2oVs1Yt657ZT09RwsIET6ke6ZtNwrDEJoz/zUOIcMJ5ajau8ovjuzZM9CIBWop1/Ww5+Qm9vRs1I6xoUH7QCNnZhdbzafWooyg2wF+0Glr+yHqN4MIVZD9FmYnbMeY3BZpa+dLBWH69DYnmEm1Gy21Yv4/l1X8DzaPGZ1LsWQeaBn2fIylxBrPQkHedPPJfAZayLzT6rfGu5Cf6BaAoxGu+psIgm2RFghrqa9boxzJ0fp2D8+kF8cA3SpgDedMHOzd6m7d+wYKSFKUllC1HsYB57sOoCU/4EGaa2Nwcm6FGJE0wzoR8vjylrCOZCKXJdv+50GYIqx3hY6EI8PUgZa87tSZOAln9smkHDID25ukbWoeDTvLWUxAONuRYDFBvUaZyzAU=
+  app: daddit

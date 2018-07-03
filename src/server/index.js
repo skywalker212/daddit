@@ -2,6 +2,8 @@ import express from 'express';
 import utils from "./helpers/utils.js";
 import path from "path";
 import dotenv from "dotenv";
+import db from './db/mongoose';
+import Post from './models/post';
 
 global.path = path;
 global.dotenv = dotenv;
