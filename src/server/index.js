@@ -59,7 +59,8 @@ app.post('/api/signup', (req, res) => {
         if (user) {
             res.json({
                 status:'success',
-                ...user
+                email: user.email,
+                uid: user.uid
             });
         }
       });
@@ -79,7 +80,8 @@ app.post('/api/login', (req, res) => {
         if (user) {
             res.json({
                 status:'success',
-                user
+                email: user.email,
+                uid: user.uid
             });
         }
       });
